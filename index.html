@@ -23,75 +23,63 @@
 
 </head>
 <body>
-    <!-- header/navbar section -->
-        <nav class="navbar  fixed-top navbar-expand-lg navigation-style">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Creative Computers</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll navright"  style="--bs-scroll-height: 120px;">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#Products">Products</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="#Services">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="#contactus" >Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-  
-  
-    <!-- Home Section  -->
-    <section id="home" class="home-tab">
-      <div class="container-fluid" >
-      <div class="row" >
-        <div class="col-md">
-          <div class="slogan-line">
-            We care
-          </div>
-          <div class="slogan-line">
-            <span style="padding-left: 15px;"> your needs.</span>
-          </div>
-<br>
-          <button type="button" onclick="window.open('https://maps.app.goo.gl/oyaDFpNYehpaU6Vn8')" class="visit-us btn btn-light btn-lg download-button"><i class="fa-solid fa-location-dot"></i> Visit Us</button>
-          <!-- <button type="button" class="Read-more btn btn-outline-info btn-lg  download-button" style="color: rgb(255, 255, 255);">Read More</button> -->
-          
-
-        </div>
-        <div class="col-md left-side" >
-          <div class="scene">
-            <div class="cube">
-              <div class="side back">
-                <img src="images/diceimages/laptopdiceimage1.png" alt="" height="300px" width="300px">
-              </div>
-              <div class="side left"><img src="images/diceimages/graphics.png" alt="" height="300px" width="300px"></div>
-              <div class="side right"><img src="images/diceimages/gaming pc.png" alt="" height="300px" width="300px"></div>
-              <div class="side top"><img src="images/diceimages/robot.png" alt="" height="300px" width="300px"></div>
-              <div class="side bottom"><img src="images/diceimages/graphics.png" alt="" height="300px" width="300px"></div>
-              <div class="side front"><img src="images/diceimages/gaming.png" alt="" height="300px" width="300px"></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
+  <!-- navigation BAR -->
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a class="logo" href="index.html">Creative Computers</a>
+      <a href="#contactus">Contact</a>
+      <a href="#Services">Services</a>
+       <a href="#Products">Products</a>
+       <a href="#home" class="active">Home</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+    </header>
 
-    </section>
+    <div id="navbar">
+        <div class="slide-menu">
+          <a class="logo" href="index.html">Creative Computers</a>
+          <a href="#contactus">Contact</a>
+          <a href="#Services">Services</a>
+          <a href="#Products">Products</a>
+          <a href="#home" class="active">Home</a>
+        </div>
+    </div>
+<!-- Home Section  -->
+<!--MAIN-->
+<div class="main home" id="home">
+<table>
+<tr>
+<td>
+<section>
+  <div class="container-fluid">
+<h5 class="sub-title">Welcome To Creative Computers</h5>
+<h1 class="slogan-line " >
+  We care
+</h1>
+<h1 class="slogan-line" style="padding-left:10px;">
+  <span > your needs</span>
+</h1>
+<div>
+  <button type="button" onclick="window.open('https://maps.app.goo.gl/oyaDFpNYehpaU6Vn8')" class="visit-us btn btn-light btn-lg download-button"><i class="fa-solid fa-location-dot"></i> Visit Us</button>
+          <button type="button"  class="Read-more btn btn-light btn-lg  download-button" ><i class="fa fa-phone" aria-hidden="true"></i> <a href="#contactus" style="color: #000;">Enquiry</a></button>
+</div>
+</div>
+</section>
+</td>
+<td>
+<img src="https://i.ibb.co/6R10B7H/main-01.png" class="inline-photo show-on-scroll" alt="INFERNO">
+</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" src="script.js" ></script>
+    
     <!-- Products tab  -->
     <section id="Products">
       <div class="container-fluid">
         <div class="heading">
           <h1 class="heading-name">Products</h1>
-          <span class="dash">For Sale</span>
+          <h6 class="dash">For Sale</h6>
         </div>
         <!-- 1st row  -->
         <div class="row row-cols-1 row-cols-md-4 g-4">
@@ -379,6 +367,11 @@
             <img class="card-img" src="images/OfficialPartners/tally.png" alt="">
           </div>
         </div>
+        <div class="col">
+          <div class="card brand-card">
+            <img class="card-img" src="images/OfficialPartners/eSSL.png" alt="">
+          </div>
+        </div>
        
 
       </div>
@@ -387,14 +380,90 @@
       </div>
 
     </div>    
-    </section>
+  </section>
 
-    <footer class="site-footer" id="contactus">
+  <div class="contactus" id="contactus">
+    <div class="container-fluid">
+      <div class="heading">
+        <h1 class="heading-name">Contact Us</h1>
+      </div >
+      <div class="container-contact ">
+        <span class="big-circle"></span>
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p>Visit the Store for Any Queries and Contact Us through our pages.</p>
+  
+            <div class="info">
+              <div class="information">
+                <p><i class="fas fa-map-marker-alt"></i> &nbsp &nbsp Shop No 20, Mauli Complex, Mayyaka, near Bus Stand, Sangola, Maharashtra 413307</p>
+              </div>
+              <div class="information">
+                <p><i class="fas fa-envelope"></i> &nbsp &nbsp creativesangola@gmail.com</p>
+              </div>
+              <div class="information">
+               <p> <i class="fas fa-phone"></i>&nbsp&nbsp +91 9421065620 / 9423065620</p>
+              </div>
+            </div>
+  
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a href="https://wa.me/+919421065620">
+                  <i class="fa fa-whatsapp"></i>
+                </a>
+                <a href="https://www.facebook.com/people/Creative-Computer-Sangola/61561177078710/">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/creativecomp_sangola/">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shashikant-kedar-a228848b">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+  
+            <form action="index.html" autocomplete="off">
+              <h3 class="title">Contact us</h3>
+              <div class="input-container">
+                <input type="text" name="name" class="input"  placeholder=" FUll name">
+                
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input"  placeholder="Email">
+               
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" placeholder="Phone">
+              
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input" placeholder="Message"></textarea>
+                
+              </div>
+              <input type="submit" value="Send" class="btn-form" >
+            </form>
+          </div>
+        </div>
+      </div>
+  
+
+
+    </div>
+  </div>
+
+    <footer class="site-footer">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <h6>About</h6>
-            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+            <p class="text-justify">In 2003, Mr. Shashikant Kedar launched Creative Computers in Sangola, providing services  to schools, colleges, banks and local businesses. Today, Creative Computers has evolved into a distinguished brand, celebrated for its exceptional service and cutting-edge solutions, including broadband, extending its reach across Sangola,Mangalwedha, Pandharpur, Jath and Sangli. Celebrating 20 years of excellence, Creative Computers continues to earn the trust and loyalty of its customers.</p>
           </div>
 
           <div class="col-xs-6 col-md-3">
@@ -408,6 +477,7 @@
               <li><a href="#Products">Products</a></li>
               <li><a href="#Services">Services</a></li>
               <li><a href="#Partners">Official Partners</a></li>
+              <li><a href="#contactus">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -415,23 +485,14 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
+          <div class="col">
             <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by 
          Shreyash Khandagale
             </p>
           </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-instagram"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-            </ul>
-          </div>
         </div>
       </div>
 </footer>
- 
-    
 </body>
 </html>
