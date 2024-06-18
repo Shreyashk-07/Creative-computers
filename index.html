@@ -396,13 +396,10 @@
   
             <div class="info">
               <div class="information">
-                <p><i class="fas fa-map-marker-alt"></i> &nbsp &nbsp Shop No 20, Mauli Complex, Mayyaka, near Bus Stand, Sangola, Maharashtra 413307</p>
+                <p><i class="fas fa-map-marker-alt"></i> &nbsp &nbsp Shop No 7 & 20, Mauli Complex, Mayyaka, near Bus Stand, Sangola, Maharashtra 413307</p>
               </div>
               <div class="information">
-                <p><i class="fas fa-envelope"></i> &nbsp &nbsp creativesangola@gmail.com</p>
-              </div>
-              <div class="information">
-               <p> <i class="fas fa-phone"></i>&nbsp&nbsp +91 9421065620 / 9423065620</p>
+                <p><i class="fas fa-envelope"></i> &nbsp &nbsp creativecomputersangola20@gmail.com</p>
               </div>
             </div>
   
@@ -429,25 +426,26 @@
             <span class="circle one"></span>
             <span class="circle two"></span>
   
-            <form action="index.html" autocomplete="off">
+            <form action="https://api.web3forms.com/submit" method="POST" >
               <h3 class="title">Contact us</h3>
+              <input type="hidden" name="access_key" value="27cf4f76-1290-4834-b9a6-e72bfc8d1895">
               <div class="input-container">
-                <input type="text" name="name" class="input"  placeholder=" FUll name">
+                <input type="text" id="customer-name" name="name" class="input"  placeholder=" FUll name" required>
                 
               </div>
               <div class="input-container">
-                <input type="email" name="email" class="input"  placeholder="Email">
+                <input type="email" id="customer-email" name="email" class="input"  placeholder="Email" required>
                
               </div>
               <div class="input-container">
-                <input type="tel" name="phone" class="input" placeholder="Phone">
+                <input type="tel" name="phone" id="phone" class="input" placeholder="Phone" required>
               
               </div>
               <div class="input-container textarea">
-                <textarea name="message" class="input" placeholder="Message"></textarea>
+                <textarea name="message" id="customer-msg" class="input" placeholder="Message" required></textarea>
                 
               </div>
-              <input type="submit" value="Send" class="btn-form" >
+              <button type="submit"  class="btn-form" >send</button>
             </form>
           </div>
         </div>

@@ -1000,11 +1000,11 @@ textarea.input {
  /* footer css */
  .site-footer
 {
-  background-color:#e1dbdb;
+  background-color:#292970;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#6a6a6a;
+  color:#ffffff;
 }
 .site-footer hr
 {
@@ -1025,7 +1025,7 @@ textarea.input {
 }
 .site-footer a
 {
-  color:#737373;
+  color:#ffffff;
 }
 .site-footer a:hover
 {
@@ -1043,7 +1043,7 @@ textarea.input {
 }
 .footer-links a
 {
-  color:#737373
+  color:#ffffff;
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
