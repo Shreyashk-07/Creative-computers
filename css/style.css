@@ -17,7 +17,6 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-font-family: monospace;
 }
 p{
   font-family: 'Kanit', sans-serif;
@@ -190,7 +189,7 @@ p{
     }
     .topnav {
       overflow: hidden;
-      width:90%;
+      width:100%;
       margin:auto;
       background-color: transparent;
     }
@@ -217,6 +216,8 @@ p{
   color:gray;
 }
 .topnav .icon {
+  padding-top:25px;
+  font-size:20px;
   display: none;
 }
 
@@ -465,7 +466,10 @@ animation: slidein 7s infinite;
 
 /* home animatiion */
 
-
+.enquiry-btn
+{
+  color: #000;
+}
 .container-fluid
 {
     padding: 1%;
@@ -513,6 +517,7 @@ animation: slidein 7s infinite;
 {
   color:#121481;
     text-align: center;
+    font-family: monospace;
     font-weight: 300;
     text-transform: capitalize;
 }
@@ -843,7 +848,7 @@ textarea.input {
 
 .icon {
   width: 30px;
-  margin-right: 0.7rem;
+  margin-right: 1rem;
 }
 
 .social-media {
